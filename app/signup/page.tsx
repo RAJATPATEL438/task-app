@@ -3,6 +3,7 @@
 import React from 'react';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function SignUp() {
     interface FormInputs {
@@ -66,6 +67,7 @@ export default function SignUp() {
                 <button type="submit" className="w-full py-2 bg-blue-500 text-white rounded-md">
                     Submit
                 </button>
+                <h1>Already have an account? <Link href="/login" className="text-blue-500 underline">Login</Link></h1>
             </form>
             </div>
         </div>
